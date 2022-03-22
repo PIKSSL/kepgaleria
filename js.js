@@ -108,7 +108,7 @@ function kiadas(){
     var megjeleno = " ";
     for (let i = 0; i < kepek.length; i++) {
         megjeleno = megjeleno + "<div class='tarolo'><div class='elemek'>" + "<h3>"+ kepek[i].cim +"</h3>" + "<img src='"+ kepek[i].eleresiut+ "' class='kepek' id='"+i +"' alt='cicás képek'/>"+
-        "<br><a href="+kepek[i].link+"class='biok'>"+kepek[i].leiras+"</a></div></div>"
+        "<br><a href="+kepek[i].link+" class='biok'>"+kepek[i].leiras+"</a></div></div>"
     }
     ID("galeria").innerHTML = megjeleno;
 
