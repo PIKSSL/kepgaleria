@@ -1,0 +1,159 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(kepek/vector-ocean-background.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
+}
+#galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
+.elemek{
+    width: 100%;
+}
+.elemek h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+}
+.elemek a{
+    text-decoration: none;
+    background-color: rgb(238, 149, 113);
+    padding: 1px 35px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.elemek a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.elemek img:hover{
+    cursor: pointer;
+}
+#fokep{
+    display: flex;
+   flex-direction: row;
+    justify-content: center;
+}
+#fokep img{
+    flex: 0 50%;
+
+}
+.tarolo{
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    width: 32%;  
+}
+img{
+    width: 100%;
+}
+header,nav,aside,article,footer, main{
+    padding: 10px;
+}
+
+button{
+    background-color: rgb(118, 246, 255);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 95, 95);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+main{
+    margin: 0px 100px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                        "he he"
+                        "na na"
+                        "ar ar"
+                        "fo fo";
+	
+}
+header{
+    grid-area:he;
+}
+nav{
+    grid-area: na;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    border: 0px;    
+    padding: 0px; 
+    gap:2px;
+
+}
+article{
+    grid-area:ar ;
+}
+footer{
+    grid-area: fo;
+    text-align: center;
+}
+nav .link a {
+    font-size: x-large;
+    padding: 5px 25px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: rgb(255, 106, 106);
+    background-color: rgb(179, 253, 179);
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.link{
+    flex:1 0 40px;
+}
+nav a:hover{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color:rgb(255, 106, 106); ;
+}
+
+.jobb_{
+    float: right;
+}
+.bal_{
+    float: left;
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: rgb(50, 66, 100);
+    }
+	main{
+        margin: 0px 0px;
+        width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "he "
+                        "na"
+                        "ar"
+                        "fo";
+    }
+
+    .tarolo{
+        width:100%;  
+    }
+    nav{
+        flex-direction: column;
+    }
+	
+} 
